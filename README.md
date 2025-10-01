@@ -50,5 +50,35 @@ Tutorial for rooting OnePlus Nord CE5
    ```
 8. Setup your device again
 
+*If bootloader is successfully unlocked **Developer Options** > **OEM Unlocking** should be greyed out and enabled*
+
 ### Flashing root
 **You must firstly unlock bootloader and setup your device again before flashing root**
+
+1. Download [Magisk Manager APK](https://github.com/topjohnwu/Magisk) and install it
+   **Download it only from official github releases**
+2. Enable *Developer Options* and *USB Debugging*
+3. If your firmware version has no patched init_boot.img
+    1. Try upgrading it to latest publically available firmware version (check update version via System Updates)
+       *Check 4pda / xda for firmware versions*
+       *You might have to sideload OTA*
+    3. Try using [Oxygen Updater](https://play.google.com/store/apps/details?id=com.arjanvlek.oxygenupdater)
+    4. Try downgrading manually to latest available version
+  
+       *You need full OTA .zip file and tools like payload-dumper to extract init_boot.img from payload.bin in OTA .zip*
+       *After getting stock init_boot.img send it to android device after installing Magisk Manager and patch init_boot.img; then send patched init_boot.img back to PC*
+4. Select patched init_boot.img that matches version of firmware downloaded on your device (also check if firmware region matches)
+   **If version of init_boot.img doesn't match your device firmware version your device might be bricked**
+5. Connect your device to PC via USB and approve debugging
+6. Reboot to fastboot
+   ```bash
+   adb reboot bootloader
+   ```
+7. Flash init_boot.img
+   ```bash
+   fastboot flash init_boot <path/to/init_boot.img>
+   ```
+    After flashing init_boot.img reboot your device
+   ```bash
+   fastboot reboot
+   ```
