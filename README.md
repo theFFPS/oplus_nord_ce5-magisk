@@ -24,7 +24,7 @@ Tutorial for rooting OnePlus Nord CE5
 #### Prerequisites
 * Ability to read and understand instructions
 * Device that supports OEM unlocking (not carrier locked device)
-* >50% charge
+* More than 50% charge
 
 ### Unlocking Bootloader
 **You must unlock bootloader before flashing rooted init_boot.img**
