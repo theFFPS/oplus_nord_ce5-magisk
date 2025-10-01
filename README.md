@@ -70,13 +70,14 @@ Tutorial for rooting OnePlus Nord CE5
        *You need full OTA .zip file and tools like payload-dumper to extract init_boot.img from payload.bin in OTA .zip*
        *After getting stock init_boot.img send it to android device after installing Magisk Manager and patch init_boot.img; then send patched init_boot.img back to PC*
 4. Select patched init_boot.img that matches version of firmware downloaded on your device (also check if firmware region matches)
+
    **If version of init_boot.img doesn't match your device firmware version your device might be bricked**
-5. Connect your device to PC via USB and approve debugging
-6. Reboot to fastboot
+6. Connect your device to PC via USB and approve debugging
+7. Reboot to fastboot
    ```bash
    adb reboot bootloader
    ```
-7. Flash init_boot.img
+8. Flash init_boot.img
    ```bash
    fastboot flash init_boot <path/to/init_boot.img>
    ```
