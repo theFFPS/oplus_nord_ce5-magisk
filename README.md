@@ -3,7 +3,10 @@ I can't access my own [post on XDA](https://xdaforums.com/posts/90537786/) or XD
 # oplus_nord_ce5-magisk
 Magisk patched init_boot images for OnePlus Nord CE5 
 
-**Magisk Version: *29.0***
+**Magisk Version: 
+* 15.0.2 - *29.0*
+* 16.0.3 - *30.7*
+**
 
 **I'm not responsible for any damage caused to your device.**
 
