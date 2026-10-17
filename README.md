@@ -6,6 +6,7 @@ Magisk patched init_boot images for OnePlus Nord CE5
 ## Magisk Version
 * 15.0.2 - *29.0*
 * 16.0.3 - *30.7*
+* 16.0.5 - *31.0*
 
 
 **I'm not responsible for any damage caused to your device.**
